@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Logmachine {
 
@@ -14,8 +13,12 @@ public class Logmachine {
 
     List<String> backlog = new ArrayList<>();
 
+
+
     public Logmachine() throws FileNotFoundException {
     }
+
+
 
     public void meteoriteEntreePerimetre(CorpsCeleste corpsCeleste, Meteorite meteorite) {
         String message = "Une météorite est entrée dans le périmètre de " + corpsCeleste.getName() + " : " + meteorite.getId();
